@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link type="image/svg" rel="icon" href="favicon/icon-1.svg" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="main">
+			<p class="heading">Calculator</p>
+			<p class="text result"></p>
+			<div>
+				<p>
+					<button
+						class="btn"
+						onclick="
+    update('1');
+    "
+					>
+						1
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('2');
+  "
+					>
+						2
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('3');
+  "
+					>
+						3
+					</button>
+					<button
+						class="btn yellow"
+						onclick="
+  update('+');
+  "
+					>
+						+
+					</button>
+				</p>
+			</div>
+			<div>
+				<p>
+					<button
+						class="btn"
+						onclick="
+    update('4');
+    "
+					>
+						4
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('5');
+  "
+					>
+						5
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('6');
+  "
+					>
+						6
+					</button>
+					<button
+						class="btn btny yellow"
+						onclick="
+  update('-');
+  "
+					>
+						-
+					</button>
+				</p>
+			</div>
+			<div>
+				<p>
+					<button
+						class="btn"
+						onclick="
+    update('7');
+    "
+					>
+						7
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('8');
+  "
+					>
+						8
+					</button>
+					<button
+						class="btn"
+						onclick="
+  update('9');
+  "
+					>
+						9
+					</button>
+					<button
+						class="btn btny yellow"
+						onclick="
+  update('*');
+  "
+					>
+						*
+					</button>
+				</p>
+			</div>
+			<div>
+				<p>
+					<button
+						class="btn"
+						onclick="
+    update('0');
+    "
+					>
+						0
+					</button>
+					<button
+						class="btn btny"
+						onclick="
+  update('.');
+  "
+					>
+						.
+					</button>
+					<button
+						class="btn"
+						onclick="
+        // eval converts the calculation string into actual math.
+  calculation = eval(calculation);
+  console.log(calculation);
+	display();
+  localStorage.setItem('save',calculation)
+  "
+					>
+						=
+					</button>
+					<button
+						class="btn btny yellow"
+						onclick="
+  update('/');
+  "
+					>
+						/
+					</button>
+				</p>
+			</div>
+			<div>
+				<p>
+					<button
+						class="btn clear"
+						onclick="
+      calculation = '';
+      console.log('Cleared.');
+			display();
+      localStorage.setItem('save',calculation)
+      "
+					>
+						Clear
+					</button>
+				</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
