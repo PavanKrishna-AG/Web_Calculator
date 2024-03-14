@@ -141,10 +141,14 @@
 						class="btn"
 						onclick="
         // eval converts the calculation string into actual math.
-  calculation = eval(calculation);
+				try{calculation = eval(calculation);
   console.log(calculation);
 	display();
-  localStorage.setItem('save',calculation)
+  localStorage.setItem('save',calculation)}
+	catch(error){
+		
+		errors();
+}
   "
 					>
 						=

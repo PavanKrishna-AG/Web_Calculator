@@ -9,3 +9,6 @@ function update(value) {
 function display() {
 	document.querySelector(".text").innerHTML = `${calculation}`;
 }
+function errors() {
+	document.querySelector(".text").innerHTML = `${"Error"}`;
+}

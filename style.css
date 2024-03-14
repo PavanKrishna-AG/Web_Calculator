@@ -40,11 +40,21 @@ body {
 	cursor: pointer;
 	width: 60px;
 }
+.btn:hover {
+	opacity: 0.8;
+}
+.btn:active {
+	background-color: #a48c8c;
+	transform: translateY(4px);
+}
 .btny {
 	padding: 12px 23px;
 }
 .yellow {
 	background-color: rgb(254, 160, 10);
+}
+.yellow:hover {
+	opacity: 0.8;
 }
 .result {
 	color: white;
@@ -57,4 +67,7 @@ body {
 	border-radius: 60px;
 	padding: 19px 3px;
 	text-align: center;
+}
+.clear:hover {
+	opacity: 0.8;
 }
